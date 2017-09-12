@@ -20,15 +20,6 @@ import {
 
 } from 'react-native';
 
-class ReactNativeApp extends Component {
-  render() {
-    let pic = {uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'};
-    return (
-      <Image source={pic} style={{width: 193, height: 110}} />
-    );
-  }
-}
-
 class Greeting extends Component {
   constructor(props) {
     super(props);
@@ -102,31 +93,34 @@ class MyAppText extends Component {
   }
 }
 
-class BinkApp extends Component {
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {
-    //         text: 'Useless Multiline Placeholder',
-    //         title: ''
-    //     };
-    // };
+class ReactNativeApp extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            text: 'Useless Multiline Placeholder',
+            title: ''
+        };
+    };
 
-    // fetchNetwork = (enableCallback) => {
-    //     fetch("http://bbs.reactnative.cn/api/category/3")
-    //     .then((response) => response.json())
-    //     .then((jsonData) => {
-    //       this.setState({
-    //         title: jsonData.topics[0].title,
-    //       })
-    //     })
-    //     .catch((error) => {
-    //           console.warn(error);
-    //       });
-    // };
+    fetchNetwork = (enableCallback) => {
+        fetch("http://bbs.reactnative.cn/api/category/3")
+        .then((response) => response.json())
+        .then((jsonData) => {
+          this.setState({
+            title: jsonData.topics[0].title,
+          })
+        })
+        .catch((error) => {
+              console.warn(error);
+          });
+    };
   render() {
+    let pic = {uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'};
+
     return (
       <View>
         <View style={{height: 20}}></View>
+        <Image source={pic} style={{width: 193, height: 110}} />
         <View><Text style={{fontWeight: 'bold'}}>I am test<Text style={{color: 'red'}}> red text</Text></Text></View>
         <Blink style={styles.red} text="I love to blink" />
         <Blink style={styles.bigblue} text="Yes, blinking is so great" />
@@ -148,22 +142,22 @@ class BinkApp extends Component {
         <View style={{height: 20}}></View>
         <View><MyAppText text='使用统一文本样式组件'/></View>
 
-        <View style={{height: 150, flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+        {/* <View style={{height: 150, flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
           <View style={{width: 100, height:30, backgroundColor: 'powderblue'}} />
           <View style={{width: 100, height:30, backgroundColor: 'skyblue'}} />
           <View style={{width: 100, height:30, backgroundColor: 'steelblue'}} />
-        </View>
+        </View> */}
 
-          {/*<View style={{padding: 10}}>*/}
-              {/*<TextInput*/}
-                  {/*style={{height: 40}}*/}
-                  {/*placeholder="Type here to translate!"*/}
-                  {/*onChangeText={(text) => this.setState({text})}*/}
-              {/*/>*/}
-              {/*<Text style={{padding: 10, fontSize: 42}}>*/}
-                  {/*{this.state.text.split(' ').map((word) => word && '🍕').join(' ')}*/}
-              {/*</Text>*/}
-          {/*</View>*/}
+           {/* <View style={{padding: 10}}>
+              <TextInput
+                  style={{height: 40}}
+                  placeholder="Type here to translate!"
+                  onChangeText={(text) => this.setState({text})}
+              />
+              <Text style={{padding: 10, fontSize: 42}}>
+                  {this.state.text.split(' ').map((word) => word && '🍕').join(' ')}
+              </Text>
+          </View> */}
 
           {/* <View>
               <ScrollView  style={{height: 150}}>
@@ -199,21 +193,21 @@ class BinkApp extends Component {
               </ScrollView>
           </View> */}
 
-           {/*<View>*/}
-              {/*<FlatList style={{height: 150}} data={[{key: 'Devin'},{key: 'Jackson'},{key: 'James'},{key: 'Joel'},{key: 'John'},{key: 'Jillian'},{key: 'Jimmy'}]} renderItem={({item}) => <Text*/}
-                  {/*style={styles.item}>{item.key}</Text>}/>*/}
-          {/*</View>*/}
-          {/*<View>*/}
-              {/*<SectionList sections={[{title: 'D', data: ['Devin']},{title: 'J', data:['Jackson', 'James', 'Jimmy', 'John']}]} renderItem={({item}) => <Text*/}
-                  {/*style={styles.item}>{item}</Text>} renderSectionHeader={({section}) => <Text style={styles.sectionHeader}>{section.title}</Text>}></SectionList>*/}
-          {/*</View>*/}
+           {/* <View>
+              <FlatList style={{height: 150}} data={[{key: 'Devin'},{key: 'Jackson'},{key: 'James'},{key: 'Joel'},{key: 'John'},{key: 'Jillian'},{key: 'Jimmy'}]} renderItem={({item}) => <Text
+                  style={styles.item}>{item.key}</Text>}/>
+          </View> */}
+          {/* <View>
+              <SectionList sections={[{title: 'D', data: ['Devin']},{title: 'J', data:['Jackson', 'James', 'Jimmy', 'John']}]} renderItem={({item}) => <Text
+                  style={styles.item}>{item}</Text>} renderSectionHeader={({section}) => <Text style={styles.sectionHeader}>{section.title}</Text>}></SectionList>
+          </View> */}
 
-          {/*<View>*/}
-              {/*<Text>*/}
-                  {/*{this.state.title}*/}
-              {/*</Text>*/}
-              {/*/!*<Button onPress={this.fetchNetwork} title="提交" />*!/*/}
-          {/*</View>*/}
+           <View>
+              <Text>
+                  {this.state.title}
+              </Text>
+              <Button onPress={this.fetchNetwork} title="提交" />
+          </View>
       </View>
 
     );
@@ -243,4 +237,4 @@ const styles = StyleSheet.create({
     }
 });
 
-AppRegistry.registerComponent('LotsOfGreetings', () => LotsOfGreetings);
+AppRegistry.registerComponent('ReactNativeApp', () => ReactNativeApp);
