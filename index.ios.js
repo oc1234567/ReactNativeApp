@@ -208,6 +208,47 @@ class ReactNativeApp extends Component {
               </Text>
               <Button onPress={this.fetchNetwork} title="提交" />
           </View>
+
+          <View style={styles.container}>
+            <Text style={styles.brifeText}>简介</Text>
+            <View style={styles.moviewBrifeContatiner}>
+              <Image style={styles.movieImage} source={{uri:'http://pic4.qiyipic.com/image/20161222/d2/59/a_100039885_m_601_180_236.jpg"'}}></Image>
+              <View style={styles.movieInfo}>
+                <View style={styles.movieDirector}>
+                  <Text style={styles.movieDirectorTitle}>导演：</Text>
+                  <Text style={styles.movieDirectorText}>路飞</Text>
+                </View>
+                <View style={styles.movieActor}>
+                  <Text style={styles.movieActorTitle}>主演：山下智久</Text>
+                  <Text style={styles.movieActorText}>杨颖</Text>
+                </View>
+                <View style={styles.movieType}>
+                  <Text style={styles.movieTypeTitle}>类型：日漫，热血</Text>
+                  <Text style={styles.movieTypeText}>可爱</Text>
+                </View>
+                <View style={styles.movieArea}>
+                  <Text style={styles.movieAreaTitle}>地区：日本</Text>
+                  <Text style={styles.movieAreaText}>出版地区：中国</Text>
+                </View>
+                <View style={styles.movieYear}>
+                  <Text style={styles.movieYearTitle}>年代：1999</Text>
+                  <Text style={styles.movieYearText}>发行年代：2001</Text>
+                </View>
+                <View style={styles.movieSource}>
+                  <View style={styles.movieSource2}>
+                    <Text style={styles.movieSourceTitle}>评分：</Text>
+                    <Text style={styles.movieSourceText}>9.1</Text>
+                  </View>
+                  <Button onPress={this._onPress.bind(this)} style={styles.movieSourceButton} color='#ff9313' accessibilityLabel='Learn more about purple'>
+                    我要评分
+                  </Button>
+                </View>
+              </View>
+              <View>
+                <Text style={styles.detailText}>有个男人他拥有世界上切财富、名望和权势，他就是「海盗王」高路德•罗杰。 在临死前说过这样一句话：让全世界的人都奔向大海 「想要我的财宝吗？想要的话全就拿去吧……！你们去找吧！我把世界上的一切都放在那里了」。 后来世界上的人们将这个宝藏称作“一个大秘宝”（One Piece），许多人为了争夺大秘宝One Piece，无数海盗扬起旗帜，互相斗争，后来就形成了「大海盗时代」。 主角蒙奇•D•路飞在遥远的路途上找寻着志同道合的伙伴，携手共进「伟大航线」，目标当上「海盗王」。</Text>
+              </View>
+            </View>
+          </View>
       </View>
 
     );
@@ -234,7 +275,133 @@ const styles = StyleSheet.create({
         fontSize: 14,
         fontWeight: 'bold',
         backgroundColor: 'rgba(247, 247, 247, 1.0)',
-    }
+    },
+    container: {
+      flexDirection: 'column',
+      justifyContent: 'flex-start',
+      backgroundColor: '#fafafa',
+    },
+    brifeText: {
+      fontSize: 15,
+      margin: 12,
+      color: '#323232',
+    },
+    moviewBrifeContatiner: {
+      flexDirection: 'row',
+      justifyContent: 'flex-start',
+      marginLeft: 12,
+      marginRight: 12,
+      marginTop: 4,
+    },
+    movieImage: {
+      width: 100,
+      aspectRatio: 0.758,
+    },
+    movieInfo: {
+      flexDirection: 'column',
+      justifyContent: 'flex-start',
+      flex: 1,
+      marginLeft: 12,
+    },
+    movieDetail: {
+      flexDirection: 'column',
+      justifyContent: 'flex-start',
+      marginLeft: 12,
+    },
+    movieDirector: {
+      flexDirection: 'row',
+      justifyContent: 'flex-start',
+    },
+    movieDirectorTitle: {
+      fontSize: 11,
+      color: '#646464',
+    },
+    movieDirectorText: {
+      fontSize: 11,
+      color: '#646464',
+    },
+    movieActor: {
+      flexDirection: 'row',
+      justifyContent: 'flex-start',
+      marginTop: 5,
+    },
+    movieActorTitle: {
+      fontSize: 11,
+      color: '#646464',
+    },
+    movieActorText: {
+      fontSize: 11,
+      color: '#646464',
+    },
+    movieType: {
+      flexDirection: 'row',
+      justifyContent: 'flex-start',
+      marginTop: 5,
+    },
+    movieTypeTitle: {
+      fontSize: 11,
+      color: '#646464',
+    },
+    movieTypeText: {
+      fontSize: 11,
+      color: '#646464',
+    },
+    movieArea: {
+      flexDirection: 'row',
+      justifyContent: 'flex-start',
+      marginTop: 5,
+    },
+    movieAreaTitle: {
+      fontSize: 11,
+      color: '#646464',
+    },
+    movieAreaText: {
+      fontSize: 11,
+      color: '#646464',
+    },
+    movieYear: {
+      flexDirection: 'row',
+      justifyContent: 'flex-start',
+      marginTop: 5,
+    }，
+    movieYearTitle: {
+      fontSize: 11,
+      color: '#646464',
+    },
+    movieYearText: {
+      fontSize: 11,
+      color: '#646464',
+    },
+    movieSource: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      flexGrow: 1,
+    },
+    movieSource2: {
+      flexDirection: 'row',
+      alignItems: 'flex-start',
+      marginTop: 5,
+    },
+    movieSourceTitle: {
+      fontSize: 11,
+      color: '#646464',
+    },
+    movieSourceText: {
+      fontSize: 11,
+      color: '#646464',
+    },
+    movieSourceButton: {
+      fontSize: 13,
+      color: '#fff',
+    },
+    detailText: {
+      fontSize: 11,
+      marginLeft: 12,
+      marginRight: 12,
+      marginTop: 16,
+      marginBottom: 16,
+      color: '#646464',
+    },
 });
 
 AppRegistry.registerComponent('ReactNativeApp', () => ReactNativeApp);
