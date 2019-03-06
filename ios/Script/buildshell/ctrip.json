@@ -1,0 +1,13 @@
+{
+    "test": {
+        "hasResouceBundle": true, 
+        "isLib": false,
+        "dependency": [
+            "Business"
+        ], 
+        "disable": false, 
+        "owner": "", 
+        "RemoteCodePath": "", 
+        "SourceCodeLocalPath": "../CTFlightBusiness"
+    }
+}
