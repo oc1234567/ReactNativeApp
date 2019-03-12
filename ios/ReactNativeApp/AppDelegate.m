@@ -9,21 +9,18 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-//#import <React/RCTBundleURLProvider.h>
-//#import <React/RCTRootView.h>
-#import <testFramework/testFramework.h>
+#import <React/RCTBundleURLProvider.h>
+#import <React/RCTRootView.h>
+//#import <testFramework/testFramework.h>
 #import <FoundationFramework/FoundationFramework.h>
 #import <UtilFramework/UtilFramework.h>
 #import <LocationFramework/LocationFramework.h>
+#import <TestFramework/TestFramework.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  SayHello *say = [[SayHello alloc] init];
-  
-  [say sayHello];
-  
   SayHelloToFoundation * say_ = [[SayHelloToFoundation alloc] init];
  
   [say_ sayHello];
@@ -35,23 +32,21 @@
   HelloLocation *location = [[HelloLocation alloc] init];
   
   [location testHello];
-  
-  
-  
-//  NSURL *jsCodeLocation;
-//
-//  jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
-//
-//  RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-//                                                      moduleName:@"ReactNativeApp"
-//                                               initialProperties:nil
-//                                                   launchOptions:launchOptions];
-//  rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
+
+  NSURL *jsCodeLocation;
+
+  jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
+
+  RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
+                                                      moduleName:@"ReactNativeApp"
+                                               initialProperties:nil
+                                                   launchOptions:launchOptions];
+  rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
 
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   ViewController *rootViewController = [ViewController new];
-//  rootViewController.view = rootView;
-  rootViewController.view.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
+  rootViewController.view = rootView;
+//  rootViewController.view.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   return YES;

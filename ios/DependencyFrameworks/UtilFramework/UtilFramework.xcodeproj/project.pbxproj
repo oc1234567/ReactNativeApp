@@ -10,6 +10,15 @@
 		D22BE6DC222539900055E4CE /* UtilFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D22BE6DA222539900055E4CE /* UtilFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D22BE7D9222628C60055E4CE /* NSArrayUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = D22BE7D7222628C60055E4CE /* NSArrayUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D22BE7DA222628C60055E4CE /* NSArrayUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D22BE7D8222628C60055E4CE /* NSArrayUtil.m */; };
+		D274EA60223114940019A2E7 /* NSString+CRURL.h in Headers */ = {isa = PBXBuildFile; fileRef = D274EA5E223114930019A2E7 /* NSString+CRURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D274EA61223114940019A2E7 /* NSString+CRURL.m in Sources */ = {isa = PBXBuildFile; fileRef = D274EA5F223114930019A2E7 /* NSString+CRURL.m */; };
+		D274EA64223115C50019A2E7 /* NSMutableDictionary+CRExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = D274EA62223115C50019A2E7 /* NSMutableDictionary+CRExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D274EA65223115C50019A2E7 /* NSMutableDictionary+CRExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D274EA63223115C50019A2E7 /* NSMutableDictionary+CRExtensions.m */; };
+		D274EA6A223117C80019A2E7 /* NSArray+CRExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = D274EA68223117C80019A2E7 /* NSArray+CRExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D274EA6B223117C80019A2E7 /* NSArray+CRExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D274EA69223117C80019A2E7 /* NSArray+CRExtensions.m */; };
+		D274EA922231191A0019A2E7 /* BaseFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D274EA912231191A0019A2E7 /* BaseFramework.framework */; };
+		D274EB6B2237862A0019A2E7 /* NSString+CRExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = D274EB692237862A0019A2E7 /* NSString+CRExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D274EB6C2237862A0019A2E7 /* NSString+CRExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D274EB6A2237862A0019A2E7 /* NSString+CRExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +27,15 @@
 		D22BE6DB222539900055E4CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D22BE7D7222628C60055E4CE /* NSArrayUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSArrayUtil.h; sourceTree = "<group>"; };
 		D22BE7D8222628C60055E4CE /* NSArrayUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSArrayUtil.m; sourceTree = "<group>"; };
+		D274EA5E223114930019A2E7 /* NSString+CRURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CRURL.h"; sourceTree = "<group>"; };
+		D274EA5F223114930019A2E7 /* NSString+CRURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CRURL.m"; sourceTree = "<group>"; };
+		D274EA62223115C50019A2E7 /* NSMutableDictionary+CRExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+CRExtensions.h"; sourceTree = "<group>"; };
+		D274EA63223115C50019A2E7 /* NSMutableDictionary+CRExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+CRExtensions.m"; sourceTree = "<group>"; };
+		D274EA68223117C80019A2E7 /* NSArray+CRExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+CRExtensions.h"; sourceTree = "<group>"; };
+		D274EA69223117C80019A2E7 /* NSArray+CRExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CRExtensions.m"; sourceTree = "<group>"; };
+		D274EA912231191A0019A2E7 /* BaseFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D274EB692237862A0019A2E7 /* NSString+CRExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CRExtensions.h"; sourceTree = "<group>"; };
+		D274EB6A2237862A0019A2E7 /* NSString+CRExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CRExtensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D274EA922231191A0019A2E7 /* BaseFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +55,7 @@
 			children = (
 				D22BE6D9222539900055E4CE /* UtilFramework */,
 				D22BE6D8222539900055E4CE /* Products */,
+				D274EA902231191A0019A2E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,9 +73,25 @@
 				D22BE6DA222539900055E4CE /* UtilFramework.h */,
 				D22BE7D7222628C60055E4CE /* NSArrayUtil.h */,
 				D22BE7D8222628C60055E4CE /* NSArrayUtil.m */,
+				D274EA5E223114930019A2E7 /* NSString+CRURL.h */,
+				D274EA5F223114930019A2E7 /* NSString+CRURL.m */,
+				D274EB692237862A0019A2E7 /* NSString+CRExtensions.h */,
+				D274EB6A2237862A0019A2E7 /* NSString+CRExtensions.m */,
+				D274EA62223115C50019A2E7 /* NSMutableDictionary+CRExtensions.h */,
+				D274EA63223115C50019A2E7 /* NSMutableDictionary+CRExtensions.m */,
+				D274EA68223117C80019A2E7 /* NSArray+CRExtensions.h */,
+				D274EA69223117C80019A2E7 /* NSArray+CRExtensions.m */,
 				D22BE6DB222539900055E4CE /* Info.plist */,
 			);
 			path = UtilFramework;
+			sourceTree = "<group>";
+		};
+		D274EA902231191A0019A2E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D274EA912231191A0019A2E7 /* BaseFramework.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -66,6 +102,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D22BE6DC222539900055E4CE /* UtilFramework.h in Headers */,
+				D274EA64223115C50019A2E7 /* NSMutableDictionary+CRExtensions.h in Headers */,
+				D274EA60223114940019A2E7 /* NSString+CRURL.h in Headers */,
+				D274EA6A223117C80019A2E7 /* NSArray+CRExtensions.h in Headers */,
+				D274EB6B2237862A0019A2E7 /* NSString+CRExtensions.h in Headers */,
 				D22BE7D9222628C60055E4CE /* NSArrayUtil.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +177,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D274EA65223115C50019A2E7 /* NSMutableDictionary+CRExtensions.m in Sources */,
+				D274EA6B223117C80019A2E7 /* NSArray+CRExtensions.m in Sources */,
+				D274EB6C2237862A0019A2E7 /* NSString+CRExtensions.m in Sources */,
+				D274EA61223114940019A2E7 /* NSString+CRURL.m in Sources */,
 				D22BE7DA222628C60055E4CE /* NSArrayUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

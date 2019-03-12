@@ -17,3 +17,4 @@ FOUNDATION_EXPORT const unsigned char UtilFrameworkVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <UtilFramework/PublicHeader.h>
 
 #import <UtilFramework/NSArrayUtil.h>
+#import <UtilFramework/NSString+CRExtensions.h>

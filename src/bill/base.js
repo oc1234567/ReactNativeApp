@@ -2,7 +2,7 @@
  * @Author: yjz 
  * @Date: 2019-01-25 09:50:31 
  * @Last Modified by: yjz
- * @Last Modified time: 2019-02-20 15:57:25
+ * @Last Modified time: 2019-03-12 15:48:20
  */
 
 /** 负责处理各项逻辑操作 */
@@ -37,10 +37,16 @@ function getPlanMoney(callback) {
     Storage.load({
         key: TOUR_ZHANGBEN_PLAN_MONEY,
         domain: 'tour'
-    }, value => {
+    }, (error, value) => {
         if (value) {
-            let data = JSON.parse(value);
-            callback(data);
+            let data = value;
+            if (typeof value === "string") {
+                let data = JSON.parse(value);
+                callback(data);
+            }else {
+                callback(data);
+            }
+            
         }
     })
 }
@@ -55,10 +61,16 @@ function getCopyRight(callback) {
     Storage.load({
         key: TOUR_ZHANGBEN_COPY_RIGHT,
         domain: 'tour'
-    }, value => {
+    }, (error, value) => {
         if (value) {
-            let data = JSON.parse(value);
-            callback(data);
+            let data = value;
+            if (typeof value === "string") { 
+                let data = JSON.parse(value);
+                callback(data);
+            }else {
+                callback(data);
+            }
+            
         }
     })
 }
@@ -103,7 +115,7 @@ function addCostForDay(cost = {money: 0, remark:'消费', costtype: '基本消�
                     //更新总账单
                     // getBillForAll((data) => {
                         let billforall = Object.defineProperty(BillData?BillData:{}, key, {value: billforyear, enumerable: true});
-                        let billlforall_allvalue = cost.isIncoming ? (BillData ? BillData.all : 0) + money : (BillData ? BillData.all : 0) - money;
+                        let billlforall_allvalue = cost.isIncoming ? (BillData ? BillData.all ? BillData.all : 0 : 0) + money : (BillData ? BillData.all ? BillData.all : 0 : 0) - money;
                         billforall = Object.defineProperty(billforall, 'all', {value: billlforall_allvalue, enumerable: true, writable: true});
                         setBill(billforall);
                         getBillForAll((data) => {
@@ -177,12 +189,16 @@ function getBillForAll(callback) {
     Storage.load({
         key: TOUR_ZHANGBEN_MONEY_BILL_LIST,
         domain: 'tour'
-    }, value => {
+    }, (error, value) => {
         if (value) {
-            let data = JSON.parse(value);
-            // console.log(`总账单：${JSON.stringify(data)}`)
-            // let data = value;
-            callback(data);
+            let data = value;
+            if (typeof value === "string") {
+                let data = JSON.parse(value);
+                callback(data); 
+            }else {
+                callback(data); 
+            }
+            
         }else {
             callback();
         }
@@ -357,10 +373,20 @@ function getCostAllTypes(callback) {
     Storage.load({
         key: TOUR_ZHANGBEN_MONEY_BILL_COST_TYPE,
         domain: 'tour'
-    }, value => {
+    }, (error, value) => {
         if (value) {
-            let data = JSON.parse(value);
-            callback(data);
+            let data = value;
+            if (typeof value === "string") {
+                let data = JSON.parse(value);
+                let isArr = Array.isArray(data);
+                if (!isArr) {
+                    value = null;
+                }
+                callback(data);
+            }else {
+                callback(data);
+            }
+            
         }else {
             callback();
         }
@@ -385,10 +411,20 @@ function getAllBillTypes(callback) {
     Storage.load({
         key: TOUR_ZHANGBEN_MONEY_BILL_TYPE,
         domain: 'tour'
-    }, value => {
+    }, (error, value) => {
         if (value) {
-            let data = JSON.parse(value);
-            callback(data);
+            let data = value;
+            if (typeof value === "string") {
+                let data = JSON.parse(value);
+                let isArr = Array.isArray(value);
+                if (!isArr) {
+                    value = null;
+                }
+                callback(data);
+            }else {
+                callback(data);
+            }
+            
         }else {
             callback();
         }
@@ -528,10 +564,16 @@ function getFilter(callback) {
     Storage.load({
         key: TOUR_ZHANGBEN_MONEY_BILL_LIST_FILTER,
         domain: 'tour'
-    }, value => {
+    }, (error, value) => {
         if (value) {
-            let data = JSON.parse(value);
-            callback(data);
+            let data = value;
+            if (typeof value === "string") {
+                let data = JSON.parse(value);
+                callback(data);
+            }else {
+                callback(data);
+            }
+            
         }else {
             getCostAllTypes((value) => {
                 let costtypes = value ? value.slice() : ['基本消费'];

@@ -7,17 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D274EA442230CD330019A2E7 /* TestFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D274EA292230CA660019A2E7 /* TestFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D274E96A2230A47B0019A2E7 /* RouterFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D274E9682230A47B0019A2E7 /* RouterFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D274EA122230C6B50019A2E7 /* CRBus.h in Headers */ = {isa = PBXBuildFile; fileRef = D274EA0A2230C6B40019A2E7 /* CRBus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D274EA132230C6B50019A2E7 /* CRRouterCommonDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = D274EA0B2230C6B50019A2E7 /* CRRouterCommonDefine.h */; };
+		D274EA142230C6B50019A2E7 /* CRBusObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D274EA0C2230C6B50019A2E7 /* CRBusObject.m */; };
+		D274EA152230C6B50019A2E7 /* CRBaseCommonDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = D274EA0D2230C6B50019A2E7 /* CRBaseCommonDefine.m */; };
+		D274EA162230C6B50019A2E7 /* CRBus.m in Sources */ = {isa = PBXBuildFile; fileRef = D274EA0E2230C6B50019A2E7 /* CRBus.m */; };
+		D274EA172230C6B50019A2E7 /* CRBusObject.h in Headers */ = {isa = PBXBuildFile; fileRef = D274EA0F2230C6B50019A2E7 /* CRBusObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D274EA182230C6B50019A2E7 /* CRRouterCommonDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = D274EA102230C6B50019A2E7 /* CRRouterCommonDefine.m */; };
+		D274EA192230C6B50019A2E7 /* CRBaseCommonDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = D274EA112230C6B50019A2E7 /* CRBaseCommonDefine.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D274EA262230CA660019A2E7 /* TestFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D274EA292230CA660019A2E7 /* TestFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFramework.h; sourceTree = "<group>"; };
-		D274EA2A2230CA660019A2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D274E9652230A47B0019A2E7 /* RouterFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RouterFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D274E9682230A47B0019A2E7 /* RouterFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterFramework.h; sourceTree = "<group>"; };
+		D274E9692230A47B0019A2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D274EA0A2230C6B40019A2E7 /* CRBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBus.h; sourceTree = "<group>"; };
+		D274EA0B2230C6B50019A2E7 /* CRRouterCommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRRouterCommonDefine.h; sourceTree = "<group>"; };
+		D274EA0C2230C6B50019A2E7 /* CRBusObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRBusObject.m; sourceTree = "<group>"; };
+		D274EA0D2230C6B50019A2E7 /* CRBaseCommonDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRBaseCommonDefine.m; sourceTree = "<group>"; };
+		D274EA0E2230C6B50019A2E7 /* CRBus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRBus.m; sourceTree = "<group>"; };
+		D274EA0F2230C6B50019A2E7 /* CRBusObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBusObject.h; sourceTree = "<group>"; };
+		D274EA102230C6B50019A2E7 /* CRRouterCommonDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRRouterCommonDefine.m; sourceTree = "<group>"; };
+		D274EA112230C6B50019A2E7 /* CRBaseCommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBaseCommonDefine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D274EA232230CA660019A2E7 /* Frameworks */ = {
+		D274E9622230A47B0019A2E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -27,96 +43,116 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D274EA1C2230CA660019A2E7 = {
+		D274E95B2230A47B0019A2E7 = {
 			isa = PBXGroup;
 			children = (
-				D274EA282230CA660019A2E7 /* TestFramework */,
-				D274EA272230CA660019A2E7 /* Products */,
+				D274E9672230A47B0019A2E7 /* RouterFramework */,
+				D274E9662230A47B0019A2E7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D274EA272230CA660019A2E7 /* Products */ = {
+		D274E9662230A47B0019A2E7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D274EA262230CA660019A2E7 /* TestFramework.framework */,
+				D274E9652230A47B0019A2E7 /* RouterFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D274EA282230CA660019A2E7 /* TestFramework */ = {
+		D274E9672230A47B0019A2E7 /* RouterFramework */ = {
 			isa = PBXGroup;
 			children = (
-				D274EA292230CA660019A2E7 /* TestFramework.h */,
-				D274EA2A2230CA660019A2E7 /* Info.plist */,
+				D274EA092230C6B40019A2E7 /* CRBus */,
+				D274E9682230A47B0019A2E7 /* RouterFramework.h */,
+				D274E9692230A47B0019A2E7 /* Info.plist */,
 			);
-			path = TestFramework;
+			path = RouterFramework;
+			sourceTree = "<group>";
+		};
+		D274EA092230C6B40019A2E7 /* CRBus */ = {
+			isa = PBXGroup;
+			children = (
+				D274EA0A2230C6B40019A2E7 /* CRBus.h */,
+				D274EA0E2230C6B50019A2E7 /* CRBus.m */,
+				D274EA0B2230C6B50019A2E7 /* CRRouterCommonDefine.h */,
+				D274EA0D2230C6B50019A2E7 /* CRBaseCommonDefine.m */,
+				D274EA0F2230C6B50019A2E7 /* CRBusObject.h */,
+				D274EA0C2230C6B50019A2E7 /* CRBusObject.m */,
+				D274EA102230C6B50019A2E7 /* CRRouterCommonDefine.m */,
+				D274EA112230C6B50019A2E7 /* CRBaseCommonDefine.h */,
+			);
+			path = CRBus;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		D274EA432230CD2E0019A2E7 /* Headers */ = {
+		D274E9602230A47B0019A2E7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D274EA442230CD330019A2E7 /* TestFramework.h in Headers */,
+				D274EA122230C6B50019A2E7 /* CRBus.h in Headers */,
+				D274EA172230C6B50019A2E7 /* CRBusObject.h in Headers */,
+				D274EA132230C6B50019A2E7 /* CRRouterCommonDefine.h in Headers */,
+				D274E96A2230A47B0019A2E7 /* RouterFramework.h in Headers */,
+				D274EA192230C6B50019A2E7 /* CRBaseCommonDefine.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D274EA252230CA660019A2E7 /* TestFramework */ = {
+		D274E9642230A47B0019A2E7 /* RouterFramework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D274EA2E2230CA660019A2E7 /* Build configuration list for PBXNativeTarget "TestFramework" */;
+			buildConfigurationList = D274E96D2230A47B0019A2E7 /* Build configuration list for PBXNativeTarget "RouterFramework" */;
 			buildPhases = (
-				D274EA432230CD2E0019A2E7 /* Headers */,
-				D274EA222230CA660019A2E7 /* Sources */,
-				D274EA232230CA660019A2E7 /* Frameworks */,
-				D274EA242230CA660019A2E7 /* Resources */,
+				D274E9602230A47B0019A2E7 /* Headers */,
+				D274E9612230A47B0019A2E7 /* Sources */,
+				D274E9622230A47B0019A2E7 /* Frameworks */,
+				D274E9632230A47B0019A2E7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TestFramework;
-			productName = TestFramework;
-			productReference = D274EA262230CA660019A2E7 /* TestFramework.framework */;
+			name = RouterFramework;
+			productName = RouterFramework;
+			productReference = D274E9652230A47B0019A2E7 /* RouterFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D274EA1D2230CA660019A2E7 /* Project object */ = {
+		D274E95C2230A47B0019A2E7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = zhangyajun;
 				TargetAttributes = {
-					D274EA252230CA660019A2E7 = {
+					D274E9642230A47B0019A2E7 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = D274EA202230CA660019A2E7 /* Build configuration list for PBXProject "TestFramework" */;
+			buildConfigurationList = D274E95F2230A47B0019A2E7 /* Build configuration list for PBXProject "RouterFramework" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = D274EA1C2230CA660019A2E7;
-			productRefGroup = D274EA272230CA660019A2E7 /* Products */;
+			mainGroup = D274E95B2230A47B0019A2E7;
+			productRefGroup = D274E9662230A47B0019A2E7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D274EA252230CA660019A2E7 /* TestFramework */,
+				D274E9642230A47B0019A2E7 /* RouterFramework */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D274EA242230CA660019A2E7 /* Resources */ = {
+		D274E9632230A47B0019A2E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -126,17 +162,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D274EA222230CA660019A2E7 /* Sources */ = {
+		D274E9612230A47B0019A2E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D274EA162230C6B50019A2E7 /* CRBus.m in Sources */,
+				D274EA142230C6B50019A2E7 /* CRBusObject.m in Sources */,
+				D274EA152230C6B50019A2E7 /* CRBaseCommonDefine.m in Sources */,
+				D274EA182230C6B50019A2E7 /* CRRouterCommonDefine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D274EA2C2230CA660019A2E7 /* Debug */ = {
+		D274E96B2230A47B0019A2E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -198,7 +238,7 @@
 			};
 			name = Debug;
 		};
-		D274EA2D2230CA660019A2E7 /* Release */ = {
+		D274E96C2230A47B0019A2E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -254,7 +294,7 @@
 			};
 			name = Release;
 		};
-		D274EA2F2230CA660019A2E7 /* Debug */ = {
+		D274E96E2230A47B0019A2E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -264,21 +304,21 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TestFramework/Info.plist;
+				INFOPLIST_FILE = RouterFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = zhangyajun.TestFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = zhangyajun.RouterFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D274EA302230CA660019A2E7 /* Release */ = {
+		D274E96F2230A47B0019A2E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -288,14 +328,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TestFramework/Info.plist;
+				INFOPLIST_FILE = RouterFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = zhangyajun.TestFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = zhangyajun.RouterFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,25 +345,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D274EA202230CA660019A2E7 /* Build configuration list for PBXProject "TestFramework" */ = {
+		D274E95F2230A47B0019A2E7 /* Build configuration list for PBXProject "RouterFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D274EA2C2230CA660019A2E7 /* Debug */,
-				D274EA2D2230CA660019A2E7 /* Release */,
+				D274E96B2230A47B0019A2E7 /* Debug */,
+				D274E96C2230A47B0019A2E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D274EA2E2230CA660019A2E7 /* Build configuration list for PBXNativeTarget "TestFramework" */ = {
+		D274E96D2230A47B0019A2E7 /* Build configuration list for PBXNativeTarget "RouterFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D274EA2F2230CA660019A2E7 /* Debug */,
-				D274EA302230CA660019A2E7 /* Release */,
+				D274E96E2230A47B0019A2E7 /* Debug */,
+				D274E96F2230A47B0019A2E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D274EA1D2230CA660019A2E7 /* Project object */;
+	rootObject = D274E95C2230A47B0019A2E7 /* Project object */;
 }

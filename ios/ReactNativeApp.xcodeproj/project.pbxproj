@@ -37,10 +37,17 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		D24CBBD02227CD3200515487 /* LocationFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24CBBCF2227CAED00515487 /* LocationFramework.framework */; };
-		D24CBC672229090900515487 /* FoundationFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24CBBA62227C45000515487 /* FoundationFramework.framework */; };
-		D24CBC682229090E00515487 /* testFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24CBB9E2227C44D00515487 /* testFramework.framework */; };
-		D24CBC692229091700515487 /* UtilFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24CBB962227C43500515487 /* UtilFramework.framework */; };
+		D274EAC82235FFF00019A2E7 /* PackageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D274EAC72235FFF00019A2E7 /* PackageManager.m */; };
+		D274EB1F223607F90019A2E7 /* BaseFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D274EB1E223607F40019A2E7 /* BaseFramework.framework */; };
+		D274EB20223607FC0019A2E7 /* FoundationFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D274EB18223607E80019A2E7 /* FoundationFramework.framework */; };
+		D274EB21223608010019A2E7 /* LocationFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D274EB12223607E00019A2E7 /* LocationFramework.framework */; };
+		D274EB22223608070019A2E7 /* RNFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D274EB0C223607D50019A2E7 /* RNFramework.framework */; };
+		D274EB232236080A0019A2E7 /* TestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D274EB06223607CA0019A2E7 /* TestFramework.framework */; };
+		D274EB242236080E0019A2E7 /* UtilFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D274EB00223607BE0019A2E7 /* UtilFramework.framework */; };
+		D274EB2F22360D280019A2E7 /* RouterFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D274EB2E22360D150019A2E7 /* RouterFramework.framework */; };
+		D274EB49223642DD0019A2E7 /* RNNativeCall.m in Sources */ = {isa = PBXBuildFile; fileRef = D274EB43223642DD0019A2E7 /* RNNativeCall.m */; };
+		D274EB4A223642DD0019A2E7 /* RNPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D274EB44223642DD0019A2E7 /* RNPlugin.m */; };
+		D274EB512236480C0019A2E7 /* RNStoragePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D274EB502236480C0019A2E7 /* RNStoragePlugin.m */; };
 		D2C435361F667E8300B64513 /* libRCTCameraRoll.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C435271F667E4F00B64513 /* libRCTCameraRoll.a */; };
 		D2FAC6FA222E157F00CA1549 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FAC6F9222E157F00CA1549 /* ViewController.m */; };
 /* End PBXBuildFile section */
@@ -270,40 +277,54 @@
 			remoteGlobalIDString = 3D383D621EBD27B9005632C8;
 			remoteInfo = "double-conversion-tvOS";
 		};
-		D24CBB952227C43500515487 /* PBXContainerItemProxy */ = {
+		D274EAFF223607BE0019A2E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D24CBB912227C43400515487 /* UtilFramework.xcodeproj */;
+			containerPortal = D274EADB223607BE0019A2E7 /* UtilFramework.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D22BE6D7222539900055E4CE;
 			remoteInfo = UtilFramework;
 		};
-		D24CBB9D2227C44D00515487 /* PBXContainerItemProxy */ = {
+		D274EB05223607CA0019A2E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D24CBB972227C44C00515487 /* testFramework.xcodeproj */;
+			containerPortal = D274EB01223607CA0019A2E7 /* TestFramework.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D2814F0D1F03A23C00864F5F;
-			remoteInfo = testFramework;
+			remoteGlobalIDString = D274EA262230CA660019A2E7;
+			remoteInfo = TestFramework;
 		};
-		D24CBB9F2227C44D00515487 /* PBXContainerItemProxy */ = {
+		D274EB0B223607D50019A2E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D24CBB972227C44C00515487 /* testFramework.xcodeproj */;
+			containerPortal = D274EB07223607D50019A2E7 /* RNFramework.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D2814F161F03A23C00864F5F;
-			remoteInfo = testFrameworkTests;
+			remoteGlobalIDString = D274EAA32235F6910019A2E7;
+			remoteInfo = RNFramework;
 		};
-		D24CBBA52227C45000515487 /* PBXContainerItemProxy */ = {
+		D274EB11223607E00019A2E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D24CBBA12227C45000515487 /* FoundationFramework.xcodeproj */;
+			containerPortal = D274EB0D223607DF0019A2E7 /* LocationFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D24CBBB12227C6A700515487;
+			remoteInfo = LocationFramework;
+		};
+		D274EB17223607E80019A2E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D274EB13223607E80019A2E7 /* FoundationFramework.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D22BE698222538D90055E4CE;
 			remoteInfo = FoundationFramework;
 		};
-		D24CBBCE2227CAED00515487 /* PBXContainerItemProxy */ = {
+		D274EB1D223607F40019A2E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D24CBBCA2227CAEC00515487 /* LocationFramework.xcodeproj */;
+			containerPortal = D274EB19223607F40019A2E7 /* BaseFramework.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D24CBBB12227C6A700515487;
-			remoteInfo = LocationFramework;
+			remoteGlobalIDString = D274EA7A223118C50019A2E7;
+			remoteInfo = BaseFramework;
+		};
+		D274EB2D22360D150019A2E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D274EB2922360D150019A2E7 /* RouterFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D274E9652230A47B0019A2E7;
+			remoteInfo = RouterFramework;
 		};
 		D2C435231F667E4F00B64513 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -318,13 +339,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 58B5115D1A9E6B3D00147676;
 			remoteInfo = RCTCameraRoll;
-		};
-		D2FAC721222E158200CA1549 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D24CBB972227C44C00515487 /* testFramework.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D24CBE21222D1CD700515487;
-			remoteInfo = testBundle;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -354,11 +368,21 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		D24CBB912227C43400515487 /* UtilFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UtilFramework.xcodeproj; path = DependencyFrameworks/UtilFramework/UtilFramework.xcodeproj; sourceTree = SOURCE_ROOT; };
-		D24CBB972227C44C00515487 /* testFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = testFramework.xcodeproj; path = DependencyFrameworks/testFramework/testFramework.xcodeproj; sourceTree = SOURCE_ROOT; };
-		D24CBBA12227C45000515487 /* FoundationFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FoundationFramework.xcodeproj; path = DependencyFrameworks/FoundationFramework/FoundationFramework.xcodeproj; sourceTree = SOURCE_ROOT; };
-		D24CBBCA2227CAEC00515487 /* LocationFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LocationFramework.xcodeproj; path = DependencyFrameworks/LocationFramework/LocationFramework.xcodeproj; sourceTree = SOURCE_ROOT; };
-		D24CBC202228D45500515487 /* pythonable.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = pythonable.xcodeproj; path = pythonable/pythonable.xcodeproj; sourceTree = "<group>"; };
+		D274EAC62235FFF00019A2E7 /* PackageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PackageManager.h; sourceTree = "<group>"; };
+		D274EAC72235FFF00019A2E7 /* PackageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PackageManager.m; sourceTree = "<group>"; };
+		D274EADB223607BE0019A2E7 /* UtilFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UtilFramework.xcodeproj; path = DependencyFrameworks/UtilFramework/UtilFramework.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D274EB01223607CA0019A2E7 /* TestFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TestFramework.xcodeproj; path = DependencyFrameworks/TestFramework/TestFramework.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D274EB07223607D50019A2E7 /* RNFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNFramework.xcodeproj; path = DependencyFrameworks/RNFramework/RNFramework.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D274EB0D223607DF0019A2E7 /* LocationFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LocationFramework.xcodeproj; path = DependencyFrameworks/LocationFramework/LocationFramework.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D274EB13223607E80019A2E7 /* FoundationFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FoundationFramework.xcodeproj; path = DependencyFrameworks/FoundationFramework/FoundationFramework.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D274EB19223607F40019A2E7 /* BaseFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BaseFramework.xcodeproj; path = DependencyFrameworks/BaseFramework/BaseFramework.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D274EB2922360D150019A2E7 /* RouterFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RouterFramework.xcodeproj; path = DependencyFrameworks/RouterFramework/RouterFramework.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D274EB43223642DD0019A2E7 /* RNNativeCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNNativeCall.m; sourceTree = "<group>"; };
+		D274EB44223642DD0019A2E7 /* RNPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPlugin.m; sourceTree = "<group>"; };
+		D274EB46223642DD0019A2E7 /* RNNativeCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNativeCall.h; sourceTree = "<group>"; };
+		D274EB47223642DD0019A2E7 /* RNPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNPlugin.h; sourceTree = "<group>"; };
+		D274EB4F2236480C0019A2E7 /* RNStoragePlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNStoragePlugin.h; sourceTree = "<group>"; };
+		D274EB502236480C0019A2E7 /* RNStoragePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNStoragePlugin.m; sourceTree = "<group>"; };
 		D2C4351B1F667E4C00B64513 /* RCTCameraRoll.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTCameraRoll.xcodeproj; path = "../node_modules/react-native/Libraries/CameraRoll/RCTCameraRoll.xcodeproj"; sourceTree = "<group>"; };
 		D2FAC6F8222E157F00CA1549 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ReactNativeApp/ViewController.h; sourceTree = "<group>"; };
 		D2FAC6F9222E157F00CA1549 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ReactNativeApp/ViewController.m; sourceTree = "<group>"; };
@@ -377,10 +401,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D24CBC692229091700515487 /* UtilFramework.framework in Frameworks */,
-				D24CBC682229090E00515487 /* testFramework.framework in Frameworks */,
-				D24CBC672229090900515487 /* FoundationFramework.framework in Frameworks */,
-				D24CBBD02227CD3200515487 /* LocationFramework.framework in Frameworks */,
+				D274EB2F22360D280019A2E7 /* RouterFramework.framework in Frameworks */,
+				D274EB242236080E0019A2E7 /* UtilFramework.framework in Frameworks */,
+				D274EB232236080A0019A2E7 /* TestFramework.framework in Frameworks */,
+				D274EB22223608070019A2E7 /* RNFramework.framework in Frameworks */,
+				D274EB21223608010019A2E7 /* LocationFramework.framework in Frameworks */,
+				D274EB20223607FC0019A2E7 /* FoundationFramework.framework in Frameworks */,
+				D274EB1F223607F90019A2E7 /* BaseFramework.framework in Frameworks */,
 				D2C435361F667E8300B64513 /* libRCTCameraRoll.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
@@ -503,13 +530,14 @@
 		13B07FAE1A68108700A75B9A /* ReactNativeApp */ = {
 			isa = PBXGroup;
 			children = (
-				D24CBC202228D45500515487 /* pythonable.xcodeproj */,
+				D274EB42223642DD0019A2E7 /* RNBridge */,
 				D22BE66322252A5B0055E4CE /* DependencyFramework */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				D2FAC6F8222E157F00CA1549 /* ViewController.h */,
 				D2FAC6F9222E157F00CA1549 /* ViewController.m */,
+				D274EAC52235FFD20019A2E7 /* PackageManager */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
@@ -621,39 +649,16 @@
 		D22BE66322252A5B0055E4CE /* DependencyFramework */ = {
 			isa = PBXGroup;
 			children = (
-				D24CBBCA2227CAEC00515487 /* LocationFramework.xcodeproj */,
-				D24CBBA12227C45000515487 /* FoundationFramework.xcodeproj */,
-				D24CBB972227C44C00515487 /* testFramework.xcodeproj */,
-				D24CBB912227C43400515487 /* UtilFramework.xcodeproj */,
+				D274EB2922360D150019A2E7 /* RouterFramework.xcodeproj */,
+				D274EB19223607F40019A2E7 /* BaseFramework.xcodeproj */,
+				D274EB13223607E80019A2E7 /* FoundationFramework.xcodeproj */,
+				D274EB0D223607DF0019A2E7 /* LocationFramework.xcodeproj */,
+				D274EB07223607D50019A2E7 /* RNFramework.xcodeproj */,
+				D274EB01223607CA0019A2E7 /* TestFramework.xcodeproj */,
+				D274EADB223607BE0019A2E7 /* UtilFramework.xcodeproj */,
 			);
 			name = DependencyFramework;
 			path = ReactNativeApp/DependencyFramework;
-			sourceTree = "<group>";
-		};
-		D24CBB922227C43400515487 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D24CBB962227C43500515487 /* UtilFramework.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D24CBB982227C44C00515487 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D24CBB9E2227C44D00515487 /* testFramework.framework */,
-				D24CBBA02227C44D00515487 /* testFrameworkTests.xctest */,
-				D2FAC722222E158200CA1549 /* testBundle.bundle */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D24CBBA22227C45000515487 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D24CBBA62227C45000515487 /* FoundationFramework.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		D24CBBC22227C6E000515487 /* Frameworks */ = {
@@ -663,19 +668,83 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D24CBBCB2227CAEC00515487 /* Products */ = {
+		D274EAC52235FFD20019A2E7 /* PackageManager */ = {
 			isa = PBXGroup;
 			children = (
-				D24CBBCF2227CAED00515487 /* LocationFramework.framework */,
+				D274EAC62235FFF00019A2E7 /* PackageManager.h */,
+				D274EAC72235FFF00019A2E7 /* PackageManager.m */,
+			);
+			path = PackageManager;
+			sourceTree = "<group>";
+		};
+		D274EADC223607BE0019A2E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D274EB00223607BE0019A2E7 /* UtilFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D24CBC212228D45500515487 /* Products */ = {
+		D274EB02223607CA0019A2E7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				D274EB06223607CA0019A2E7 /* TestFramework.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D274EB08223607D50019A2E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D274EB0C223607D50019A2E7 /* RNFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D274EB0E223607DF0019A2E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D274EB12223607E00019A2E7 /* LocationFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D274EB14223607E80019A2E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D274EB18223607E80019A2E7 /* FoundationFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D274EB1A223607F40019A2E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D274EB1E223607F40019A2E7 /* BaseFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D274EB2A22360D150019A2E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D274EB2E22360D150019A2E7 /* RouterFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D274EB42223642DD0019A2E7 /* RNBridge */ = {
+			isa = PBXGroup;
+			children = (
+				D274EB46223642DD0019A2E7 /* RNNativeCall.h */,
+				D274EB43223642DD0019A2E7 /* RNNativeCall.m */,
+				D274EB47223642DD0019A2E7 /* RNPlugin.h */,
+				D274EB44223642DD0019A2E7 /* RNPlugin.m */,
+				D274EB4F2236480C0019A2E7 /* RNStoragePlugin.h */,
+				D274EB502236480C0019A2E7 /* RNStoragePlugin.m */,
+			);
+			name = RNBridge;
+			path = ReactNativeApp/RNBridge;
 			sourceTree = "<group>";
 		};
 		D2C4351C1F667E4C00B64513 /* Products */ = {
@@ -799,16 +868,16 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = D24CBBA22227C45000515487 /* Products */;
-					ProjectRef = D24CBBA12227C45000515487 /* FoundationFramework.xcodeproj */;
+					ProductGroup = D274EB1A223607F40019A2E7 /* Products */;
+					ProjectRef = D274EB19223607F40019A2E7 /* BaseFramework.xcodeproj */;
 				},
 				{
-					ProductGroup = D24CBBCB2227CAEC00515487 /* Products */;
-					ProjectRef = D24CBBCA2227CAEC00515487 /* LocationFramework.xcodeproj */;
+					ProductGroup = D274EB14223607E80019A2E7 /* Products */;
+					ProjectRef = D274EB13223607E80019A2E7 /* FoundationFramework.xcodeproj */;
 				},
 				{
-					ProductGroup = D24CBC212228D45500515487 /* Products */;
-					ProjectRef = D24CBC202228D45500515487 /* pythonable.xcodeproj */;
+					ProductGroup = D274EB0E223607DF0019A2E7 /* Products */;
+					ProjectRef = D274EB0D223607DF0019A2E7 /* LocationFramework.xcodeproj */;
 				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
@@ -863,12 +932,20 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
-					ProductGroup = D24CBB982227C44C00515487 /* Products */;
-					ProjectRef = D24CBB972227C44C00515487 /* testFramework.xcodeproj */;
+					ProductGroup = D274EB08223607D50019A2E7 /* Products */;
+					ProjectRef = D274EB07223607D50019A2E7 /* RNFramework.xcodeproj */;
 				},
 				{
-					ProductGroup = D24CBB922227C43400515487 /* Products */;
-					ProjectRef = D24CBB912227C43400515487 /* UtilFramework.xcodeproj */;
+					ProductGroup = D274EB2A22360D150019A2E7 /* Products */;
+					ProjectRef = D274EB2922360D150019A2E7 /* RouterFramework.xcodeproj */;
+				},
+				{
+					ProductGroup = D274EB02223607CA0019A2E7 /* Products */;
+					ProjectRef = D274EB01223607CA0019A2E7 /* TestFramework.xcodeproj */;
+				},
+				{
+					ProductGroup = D274EADC223607BE0019A2E7 /* Products */;
+					ProjectRef = D274EADB223607BE0019A2E7 /* UtilFramework.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1092,39 +1169,53 @@
 			remoteRef = D22BE68B22252A5B0055E4CE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D24CBB962227C43500515487 /* UtilFramework.framework */ = {
+		D274EB00223607BE0019A2E7 /* UtilFramework.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = UtilFramework.framework;
-			remoteRef = D24CBB952227C43500515487 /* PBXContainerItemProxy */;
+			remoteRef = D274EAFF223607BE0019A2E7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D24CBB9E2227C44D00515487 /* testFramework.framework */ = {
+		D274EB06223607CA0019A2E7 /* TestFramework.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = testFramework.framework;
-			remoteRef = D24CBB9D2227C44D00515487 /* PBXContainerItemProxy */;
+			path = TestFramework.framework;
+			remoteRef = D274EB05223607CA0019A2E7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D24CBBA02227C44D00515487 /* testFrameworkTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = testFrameworkTests.xctest;
-			remoteRef = D24CBB9F2227C44D00515487 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D24CBBA62227C45000515487 /* FoundationFramework.framework */ = {
+		D274EB0C223607D50019A2E7 /* RNFramework.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = FoundationFramework.framework;
-			remoteRef = D24CBBA52227C45000515487 /* PBXContainerItemProxy */;
+			path = RNFramework.framework;
+			remoteRef = D274EB0B223607D50019A2E7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D24CBBCF2227CAED00515487 /* LocationFramework.framework */ = {
+		D274EB12223607E00019A2E7 /* LocationFramework.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = LocationFramework.framework;
-			remoteRef = D24CBBCE2227CAED00515487 /* PBXContainerItemProxy */;
+			remoteRef = D274EB11223607E00019A2E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D274EB18223607E80019A2E7 /* FoundationFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FoundationFramework.framework;
+			remoteRef = D274EB17223607E80019A2E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D274EB1E223607F40019A2E7 /* BaseFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BaseFramework.framework;
+			remoteRef = D274EB1D223607F40019A2E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D274EB2E22360D150019A2E7 /* RouterFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RouterFramework.framework;
+			remoteRef = D274EB2D22360D150019A2E7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		D2C435241F667E4F00B64513 /* libRCTBlob-tvOS.a */ = {
@@ -1139,13 +1230,6 @@
 			fileType = archive.ar;
 			path = libRCTCameraRoll.a;
 			remoteRef = D2C435261F667E4F00B64513 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D2FAC722222E158200CA1549 /* testBundle.bundle */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = testBundle.bundle;
-			remoteRef = D2FAC721222E158200CA1549 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1247,7 +1331,11 @@
 			files = (
 				D2FAC6FA222E157F00CA1549 /* ViewController.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				D274EAC82235FFF00019A2E7 /* PackageManager.m in Sources */,
+				D274EB49223642DD0019A2E7 /* RNNativeCall.m in Sources */,
+				D274EB4A223642DD0019A2E7 /* RNPlugin.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				D274EB512236480C0019A2E7 /* RNStoragePlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

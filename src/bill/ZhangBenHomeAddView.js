@@ -2,7 +2,7 @@
  * @Author: yjz 
  * @Date: 2019-01-25 10:15:34 
  * @Last Modified by: yjz
- * @Last Modified time: 2019-02-20 16:01:34
+ * @Last Modified time: 2019-03-12 16:07:25
  */
 import React, {Component} from 'react'
 import {StyleSheet, View, Modal, TouchableHighlight, Text, TextInput, Picker, Switch, ScrollView, TouchableOpacity, Button} from 'react-native'
@@ -137,7 +137,7 @@ class ModalView extends Component {
                                 <Text>添加自定义类别+</Text>
                             </TouchableOpacity>
                             {this.state.isCustomCostStyleModalVisible && <View style={{flexDirection: 'row'}}>
-                                <TextInput style={{height: 44, borderColor: 'gray', borderWidth: 1}} onChangeText={(text)=>{
+                                <TextInput style={{height: 44, minWidth: 100, borderColor: 'gray', borderWidth: 1}} onChangeText={(text)=>{
                                         this.setState({
                                             costtype: text
                                         })
@@ -184,7 +184,7 @@ class ModalView extends Component {
                                 <Text>添加自定义账本+</Text>
                             </TouchableOpacity>
                             {this.state.isCustomBillStyleModalVisible && <View style={{flexDirection: 'row'}}>
-                                <TextInput style={{height: 44, borderColor: 'gray', borderWidth: 1}} onChangeText={(text)=>{
+                                <TextInput style={{height: 44, minWidth:100, borderColor: 'gray', borderWidth: 1}} onChangeText={(text)=>{
                                     this.setState({
                                         billtype: text
                                     })
@@ -251,12 +251,12 @@ class ModalView extends Component {
                                 }
                             }));
                             
-                        }}>
+                        }} style={[{height: 44}, styles.alignCenter, styles.finishColor]}>
                             <Text>完成</Text>
                         </TouchableHighlight>
                         <TouchableHighlight onPress={()=>{
                             this.props.onRequestClose()
-                        }}>
+                        }} style={[{height: 44}, styles.alignCenter, styles.cancelColor]}>
                             <Text>取消</Text>
                         </TouchableHighlight>
                     </View>
@@ -269,77 +269,21 @@ class ModalView extends Component {
     }
 }
 
-// class CustomCostStyleModalView extends Component {
-//     state = {
-//         costtype:''
-//     }
-//     render() {
-//         return (
-//             <View>
-//                 <Modal animationType='slide' transparent={false} visible={true} onRequestClose={()=>{
-//                     alert("Modal has been closed.");
-//                 }}>
-//                     <Text>添加自定义类别：</Text><TextInput style={{height: 44, borderColor: 'gray', borderWidth: 1}} onChangeText={(text)=>{
-//                             this.setState({
-//                                 costtype: text
-//                             })
-//                     }} autoFocus={true} placeholder={'输入类别名称...'}/>
-//                     <TouchableHighlight onPress={()=>{
-//                             addCostType(this.state.costtype, ((result) => {
-//                                 if (result === 'success') {
-//                                     this.props.onRequestClose()
-//                                 }else {
-//                                     alert('失败！')
-//                                     this.props.onRequestClose()
-//                                 }
-//                             }));
-//                         }}>
-//                         <Text>完成</Text>
-//                     </TouchableHighlight>
-//                 </Modal>
-//             </View>
-//         )
-//     }
-// }
-
-// class CustomBillStyleModalView extends Component {
-//     state = {
-//         billtype:''
-//     }
-//     render() {
-//         return (
-//             <View>
-//                 <Modal animationType='slide' transparent={false} visible={true} onRequestClose={()=>{
-//                     alert("Modal has been closed.");
-//                 }}>
-//                     <Text>添加自定义账本：</Text><TextInput style={{height: 44, borderColor: 'gray', borderWidth: 1}} onChangeText={(text)=>{
-//                             this.setState({
-//                                 billtype: text
-//                             })
-//                     }} autoFocus={true} placeholder={'输入账本名称...'}/>
-//                     <TouchableHighlight onPress={()=>{
-//                             addBillType(this.state.billtype, ((result) => {
-//                                 if (result === 'success') {
-//                                     this.props.onRequestClose()
-//                                 }else {
-//                                     alert('失败！')
-//                                     this.props.onRequestClose()
-//                                 }
-//                             }));
-//                         }}>
-//                         <Text>完成</Text>
-//                     </TouchableHighlight>
-//                 </Modal>
-//             </View>
-//         )
-//     }
-// }
-
 const styles = StyleSheet.create({
     add: {
         // backgroundColor: 'blue',
         height: 44,
         width: 100,
+    },
+    alignCenter: {
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    finishColor: {
+        backgroundColor: '#808080',
+    },
+    cancelColor: {
+        backgroundColor: '#d3d3d3',
     }
 
 })

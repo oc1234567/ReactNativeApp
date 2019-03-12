@@ -10,6 +10,22 @@
 		D22BE69D222538D90055E4CE /* FoundationFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D22BE69B222538D90055E4CE /* FoundationFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D22BE6EA222539DB0055E4CE /* SayHelloToFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = D22BE6E8222539DB0055E4CE /* SayHelloToFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D22BE6EB222539DB0055E4CE /* SayHelloToFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = D22BE6E9222539DB0055E4CE /* SayHelloToFoundation.m */; };
+		D274E9CC2230B1A70019A2E7 /* CRBusManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D274E9CA2230B1A70019A2E7 /* CRBusManager.h */; };
+		D274E9CD2230B1A70019A2E7 /* CRBusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D274E9CB2230B1A70019A2E7 /* CRBusManager.m */; };
+		D274EA1B2230C7500019A2E7 /* RouterFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D274EA1A2230C7500019A2E7 /* RouterFramework.framework */; };
+		D274EA4A223106D00019A2E7 /* CRAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D274EA48223106D00019A2E7 /* CRAppDelegate.h */; };
+		D274EA4B223106D00019A2E7 /* CRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D274EA49223106D00019A2E7 /* CRAppDelegate.m */; };
+		D274EA4F22310BB40019A2E7 /* CRURLDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = D274EA4D22310BB40019A2E7 /* CRURLDispatcher.h */; };
+		D274EA5022310BB40019A2E7 /* CRURLDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D274EA4E22310BB40019A2E7 /* CRURLDispatcher.m */; };
+		D274EA5422310F290019A2E7 /* CRNURL.h in Headers */ = {isa = PBXBuildFile; fileRef = D274EA5222310F290019A2E7 /* CRNURL.h */; };
+		D274EA5522310F290019A2E7 /* CRNURL.m in Sources */ = {isa = PBXBuildFile; fileRef = D274EA5322310F290019A2E7 /* CRNURL.m */; };
+		D274EA58223111A00019A2E7 /* CRURLCommonUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = D274EA56223111A00019A2E7 /* CRURLCommonUtil.h */; };
+		D274EA59223111A00019A2E7 /* CRURLCommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D274EA57223111A00019A2E7 /* CRURLCommonUtil.m */; };
+		D274EA5C2231122B0019A2E7 /* CRFoundationCommonDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = D274EA5A2231122B0019A2E7 /* CRFoundationCommonDefine.h */; };
+		D274EA67223116910019A2E7 /* UtilFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D274EA66223116910019A2E7 /* UtilFramework.framework */; };
+		D274EA9822311A180019A2E7 /* BaseFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D274EA9722311A180019A2E7 /* BaseFramework.framework */; };
+		D274EB2722360CA00019A2E7 /* CRFoundationCommonUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = D274EB2522360CA00019A2E7 /* CRFoundationCommonUtil.h */; };
+		D274EB2822360CA00019A2E7 /* CRFoundationCommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D274EB2622360CA00019A2E7 /* CRFoundationCommonUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +34,22 @@
 		D22BE69C222538D90055E4CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D22BE6E8222539DB0055E4CE /* SayHelloToFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SayHelloToFoundation.h; sourceTree = "<group>"; };
 		D22BE6E9222539DB0055E4CE /* SayHelloToFoundation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SayHelloToFoundation.m; sourceTree = "<group>"; };
+		D274E9CA2230B1A70019A2E7 /* CRBusManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRBusManager.h; sourceTree = "<group>"; };
+		D274E9CB2230B1A70019A2E7 /* CRBusManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRBusManager.m; sourceTree = "<group>"; };
+		D274EA1A2230C7500019A2E7 /* RouterFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RouterFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D274EA48223106D00019A2E7 /* CRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRAppDelegate.h; sourceTree = "<group>"; };
+		D274EA49223106D00019A2E7 /* CRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRAppDelegate.m; sourceTree = "<group>"; };
+		D274EA4D22310BB40019A2E7 /* CRURLDispatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRURLDispatcher.h; sourceTree = "<group>"; };
+		D274EA4E22310BB40019A2E7 /* CRURLDispatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRURLDispatcher.m; sourceTree = "<group>"; };
+		D274EA5222310F290019A2E7 /* CRNURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRNURL.h; sourceTree = "<group>"; };
+		D274EA5322310F290019A2E7 /* CRNURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRNURL.m; sourceTree = "<group>"; };
+		D274EA56223111A00019A2E7 /* CRURLCommonUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRURLCommonUtil.h; sourceTree = "<group>"; };
+		D274EA57223111A00019A2E7 /* CRURLCommonUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRURLCommonUtil.m; sourceTree = "<group>"; };
+		D274EA5A2231122B0019A2E7 /* CRFoundationCommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRFoundationCommonDefine.h; sourceTree = "<group>"; };
+		D274EA66223116910019A2E7 /* UtilFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UtilFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D274EA9722311A180019A2E7 /* BaseFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D274EB2522360CA00019A2E7 /* CRFoundationCommonUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRFoundationCommonUtil.h; sourceTree = "<group>"; };
+		D274EB2622360CA00019A2E7 /* CRFoundationCommonUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRFoundationCommonUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +57,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D274EA9822311A180019A2E7 /* BaseFramework.framework in Frameworks */,
+				D274EA67223116910019A2E7 /* UtilFramework.framework in Frameworks */,
+				D274EA1B2230C7500019A2E7 /* RouterFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +71,7 @@
 			children = (
 				D22BE69A222538D90055E4CE /* FoundationFramework */,
 				D22BE699222538D90055E4CE /* Products */,
+				D274E9CF2230B4220019A2E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,12 +86,59 @@
 		D22BE69A222538D90055E4CE /* FoundationFramework */ = {
 			isa = PBXGroup;
 			children = (
+				D274EA4C22310B7A0019A2E7 /* CRURLDispatcher */,
+				D274E9C92230B1980019A2E7 /* CRAppDelegate */,
 				D22BE69B222538D90055E4CE /* FoundationFramework.h */,
+				D274EA5A2231122B0019A2E7 /* CRFoundationCommonDefine.h */,
+				D274EB2522360CA00019A2E7 /* CRFoundationCommonUtil.h */,
+				D274EB2622360CA00019A2E7 /* CRFoundationCommonUtil.m */,
 				D22BE6E8222539DB0055E4CE /* SayHelloToFoundation.h */,
 				D22BE6E9222539DB0055E4CE /* SayHelloToFoundation.m */,
 				D22BE69C222538D90055E4CE /* Info.plist */,
 			);
 			path = FoundationFramework;
+			sourceTree = "<group>";
+		};
+		D274E9C92230B1980019A2E7 /* CRAppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D274E9CA2230B1A70019A2E7 /* CRBusManager.h */,
+				D274E9CB2230B1A70019A2E7 /* CRBusManager.m */,
+				D274EA48223106D00019A2E7 /* CRAppDelegate.h */,
+				D274EA49223106D00019A2E7 /* CRAppDelegate.m */,
+			);
+			path = CRAppDelegate;
+			sourceTree = "<group>";
+		};
+		D274E9CF2230B4220019A2E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D274EA9722311A180019A2E7 /* BaseFramework.framework */,
+				D274EA66223116910019A2E7 /* UtilFramework.framework */,
+				D274EA1A2230C7500019A2E7 /* RouterFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D274EA4C22310B7A0019A2E7 /* CRURLDispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				D274EA5122310F120019A2E7 /* CRNURL */,
+				D274EA4D22310BB40019A2E7 /* CRURLDispatcher.h */,
+				D274EA4E22310BB40019A2E7 /* CRURLDispatcher.m */,
+			);
+			path = CRURLDispatcher;
+			sourceTree = "<group>";
+		};
+		D274EA5122310F120019A2E7 /* CRNURL */ = {
+			isa = PBXGroup;
+			children = (
+				D274EA5222310F290019A2E7 /* CRNURL.h */,
+				D274EA5322310F290019A2E7 /* CRNURL.m */,
+				D274EA56223111A00019A2E7 /* CRURLCommonUtil.h */,
+				D274EA57223111A00019A2E7 /* CRURLCommonUtil.m */,
+			);
+			path = CRNURL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,7 +148,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D274EA5C2231122B0019A2E7 /* CRFoundationCommonDefine.h in Headers */,
+				D274EA4F22310BB40019A2E7 /* CRURLDispatcher.h in Headers */,
+				D274EA58223111A00019A2E7 /* CRURLCommonUtil.h in Headers */,
+				D274EB2722360CA00019A2E7 /* CRFoundationCommonUtil.h in Headers */,
 				D22BE69D222538D90055E4CE /* FoundationFramework.h in Headers */,
+				D274E9CC2230B1A70019A2E7 /* CRBusManager.h in Headers */,
+				D274EA4A223106D00019A2E7 /* CRAppDelegate.h in Headers */,
+				D274EA5422310F290019A2E7 /* CRNURL.h in Headers */,
 				D22BE6EA222539DB0055E4CE /* SayHelloToFoundation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +228,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D22BE6EB222539DB0055E4CE /* SayHelloToFoundation.m in Sources */,
+				D274EA5522310F290019A2E7 /* CRNURL.m in Sources */,
+				D274E9CD2230B1A70019A2E7 /* CRBusManager.m in Sources */,
+				D274EA59223111A00019A2E7 /* CRURLCommonUtil.m in Sources */,
+				D274EA4B223106D00019A2E7 /* CRAppDelegate.m in Sources */,
+				D274EB2822360CA00019A2E7 /* CRFoundationCommonUtil.m in Sources */,
+				D274EA5022310BB40019A2E7 /* CRURLDispatcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +368,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = FoundationFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -284,6 +382,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -297,6 +396,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = FoundationFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +410,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
