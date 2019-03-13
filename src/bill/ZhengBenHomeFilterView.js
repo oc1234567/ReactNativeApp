@@ -2,7 +2,7 @@
  * @Author: yjz 
  * @Date: 2019-01-29 14:47:38 
  * @Last Modified by: yjz
- * @Last Modified time: 2019-02-20 13:59:57
+ * @Last Modified time: 2019-03-13 15:03:42
  */
 import React, {Component} from 'react'
 import {View, TouchableOpacity, ScrollView, Text, StyleSheet} from 'react-native'
