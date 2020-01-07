@@ -9,6 +9,7 @@ import ExampleHooks from '../HooksTest/ExampleHooks'
 import ExampleClass from '../HooksTest/ExampleClass'
 import ExampleContext from '../HooksTest/DynamicContext/app'
 import ExampleMultiContext from '../HooksTest/ConsumMultipleContexts/app'
+import ExampleReduxReactHook from "../HooksTest/ConsumMultipleContexts/testApp";
 const global_name = 'This is Function Component Test Name';
 
 // const withUser = WrappedComponent => (name, props) => <WrappedComponent user={name} {...props} />
@@ -32,6 +33,7 @@ export default class TestView extends Component {
             <ExampleClass></ExampleClass>
             <ExampleContext></ExampleContext>
             <ExampleMultiContext></ExampleMultiContext>
+            <ExampleReduxReactHook></ExampleReduxReactHook>
         </View>
     }
 } 
