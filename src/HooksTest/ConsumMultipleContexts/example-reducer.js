@@ -1,14 +1,14 @@
-export const reducer1 = (state, count) => {
+export const addCountReducer = (state) => {
     return {
         ...state,
-        count: ++count,
+        count: state.count + 1,
     }
 }
 
-export const reducer2 = (state, count) => {
+export const reduceCountReducer = (state) => {
     return {
         ...state,
-        count: --count,
+        count: state.count - 1,
     }
 }
 

@@ -6,8 +6,8 @@ import {
 } from 'react-native'
 
 import Provider from '../initReactRedux/initProvider'
-import * as Actions from "../DynamicContext/example-reducer";
-import useState from '../initReactRedux/useModal/useState'
+import * as Actions from "./example-reducer";
+import useSubstate from '../initReactRedux/useModal/useSubstate'
 import useDispatch from '../initReactRedux/useModal/useDispatch'
 
 function App() {
@@ -54,7 +54,7 @@ function Layout() {
 function Content() {
     let { setTheme }  = useDispatch();
 
-    let state = useState();
+    let state = useSubstate((state) => ({theme: state.theme}));
   return (
     <React.Fragment>
       <ContentSub theme={state.theme} />
@@ -68,7 +68,7 @@ function Content() {
 function Sidebar() {
     let { setName }  = useDispatch();
 
-    let state = useState();
+    let state = useSubstate((state) => ({user: state.user, theme: state.theme}));
   return (
     <React.Fragment>
       <SidebarSub user={state.user} theme={state.theme} />
@@ -81,7 +81,7 @@ function Sidebar() {
 }
 
 function Count() {
-    let state = useState();
+    let state = useSubstate((state) => ({count: state.count}));
   return (
     <CountItem count={state.count || 0} />
   );

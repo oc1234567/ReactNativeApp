@@ -12,19 +12,6 @@ import ExampleMultiContext from '../HooksTest/ConsumMultipleContexts/app'
 import ExampleReduxReactHook from "../HooksTest/ConsumMultipleContexts/testApp";
 const global_name = 'This is Function Component Test Name';
 
-// const withUser = WrappedComponent => (name, props) => <WrappedComponent user={name} {...props} />
-
-// const UserPage = props => (
-// <View style={{paddingTop: 200}} class="user-container">
-//     {props.user && <Text>My name is {props.user}!</Text>}
-//     {props.isEnable && <Text>This is prop: {props.isEnable}</Text>}
-//     <Text>Ending</Text>
-// </View>
-// );
-
-// let  view = withUser(UserPage)('aa', {isEnable: 'eee'})
-
-// let view = ExampleHooks();
 export default class TestView extends Component {
 
     render() {

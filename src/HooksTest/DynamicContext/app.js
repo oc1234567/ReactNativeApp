@@ -32,11 +32,24 @@ class App extends Component {
         return (
             <View>
                 <MultiThemeContext.Provider value={this.state.theme}>
+                    <Sub1 />
                     <ToorBar changeTheme={this.toggleTheme} />
+                    <Sub2 />
                 </MultiThemeContext.Provider>
+                
             </View>
         )
     }
+}
+
+function Sub1() {
+    console.log('Sub 1')
+    return <Text>Sub 1</Text>
+}
+
+function Sub2() {
+    console.log('Sub 2')
+    return <Text>Sub 2</Text>
 }
 
 export default App

@@ -37,26 +37,7 @@ class ExampleComponentClass extends Component {
         this.state = {
             count: 0,
             fruit: 'orange',
-            ideas: [{content: 'Good Idea'}],
-            _contentWidth: Dimensions.get('window').width,
-            _contentHeight: Dimensions.get('window').height,
-        }
-    }
-
-    componentDidMount() {
-        //拉取数据
-
-        //***注册监听***
-        //屏幕变化监听
-        this.__crnDimensionChangeEvent = DeviceEventEmitter.addListener('didUpdateDimensions', function(e) {
-            if (e && e.fromCRN) { this.setState({_contentWidth: Dimensions.get('window').width, _contentHeight: Dimensions.get('window').height,}) }
-         }.bind(this));
-    }
-
-    componentWillUnmount(){
-        //***清除监听***
-        if (this.__crnDimensionChangeEvent) {
-            DeviceEventEmitter.removeSubscription(this.__crnDimensionChangeEvent);
+            ideas: [{content: 'Good Idea'}]
         }
     }
 

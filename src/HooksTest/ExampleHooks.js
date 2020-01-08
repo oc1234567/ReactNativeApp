@@ -6,8 +6,6 @@ import {
     View,
     Text,
     Button,
-    Dimensions,
-    DeviceEventEmitter
 } from 'react-native'
 
 const ThemeContext = React.createContext('light');
@@ -63,18 +61,9 @@ function ExampleHooks(props) {
      * A:使用useEffect调度的effect不是同步的，与componentDidMount和ComponentDidUpdate的同步运行不同。如果有同步需求，可以使用 useLayoutEffect Hooks API
      */
     useEffect(()=>{
-        //拉取数据
-
-        //***注册监听***
-        // DeviceEventEmitter.addListener('didUpdateDimensions', function(e) {
-        //     if (e && e.fromCRN) { this.setState({_contentWidth: Dimensions.get('window').width, _contentHeight: Dimensions.get('window').height,}) }
-        //  }.bind(this));
-
-        //***清除监听***
-        // return function cleanup() {
-        //     DeviceEventEmitter.removeCurrentListener();//??
-        // }
-    }, [ideas])
+        console.log('mount')
+        return () => {console.log('unmount')}
+    })
 
     const theme = useContext(ThemeContext);
 
